@@ -1,0 +1,12 @@
+[workspace]
+restore_data_on_startup = True
+save_data_on_exit = True
+save_history = True
+save_non_project_files = False
+project_type = 'empty-project-type'
+recent_files = ['gridworld.py', 'windy_gridworld.py', 'algorithms\\init.py', 'algorithms\\dynamic_programming.py', 'algorithms\\monte_carlo.py', 'algorithms\\temporal_difference.py', 'experiments\\init.py', 'experiments\\run_all_algorithms.py', 'experiments\\figure_4_1_replication.py', 'utils\\init.py']
+
+[main]
+version = 0.2.0
+recent_files = []
+
