@@ -1,6 +1,6 @@
 """
 MCTS-UCT Algorithm Implementation
-Author: Student Name
+Author: Mehar
 Course: NEU Self-Improving AI
 Date: 2025
 
