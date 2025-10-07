@@ -1,6 +1,6 @@
 """
 Configuration Management Utilities
-Author: Student Name
+Author: Mehar
 Course: NEU Self-Improving AI
 Date: 2025
 
