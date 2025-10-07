@@ -1,0 +1,79 @@
+{
+  "trial": 4,
+  "mcts_llm": {
+    "method": "MCTS-LLM",
+    "prompt": "Write a thriller about corporate espionage",
+    "story": {
+      "outline": "Write a thriller about corporate espionage",
+      "elements": [],
+      "genre": "thriller",
+      "final_scores": {
+        "coherence": 1.0,
+        "creativity": 0.5
+      }
+    },
+    "statistics": {
+      "simulations": 50,
+      "elapsed_time": 0.014849662780761719,
+      "tree_size": 1,
+      "average_depth": 0,
+      "root_visits": 50,
+      "best_action_visits": 0,
+      "simulations_per_second": 3367.079827885171
+    },
+    "elapsed_time": 0.025767087936401367,
+    "scores": {
+      "length": 6,
+      "coherence": 0.6403861812204279,
+      "creativity": 0.41215798321572694,
+      "structure": 0.822736147953584,
+      "overall": 0.4827104789215632
+    }
+  },
+  "pure_llm": {
+    "method": "Pure-LLM",
+    "prompt": "Write a thriller about corporate espionage",
+    "story": {
+      "outline": "Generic response for demonstration purposes.",
+      "elements": [],
+      "genre": "fantasy"
+    },
+    "statistics": {
+      "simulations": 1
+    },
+    "elapsed_time": 0.011705875396728516,
+    "scores": {
+      "length": 5,
+      "coherence": 0.5885553397035245,
+      "creativity": 0.8702292921764572,
+      "structure": 0.9769642885012937,
+      "overall": 0.6350282472642532
+    }
+  },
+  "random_mcts": {
+    "method": "Random-MCTS",
+    "prompt": "Write a thriller about corporate espionage",
+    "story": {
+      "outline": "Write a thriller about corporate espionage\n[Generated with random MCTS]",
+      "elements": [],
+      "genre": "fantasy"
+    },
+    "statistics": {
+      "simulations": 50,
+      "elapsed_time": 0.0006272792816162109,
+      "tree_size": 1,
+      "average_depth": 0,
+      "root_visits": 50,
+      "best_action_visits": 0,
+      "simulations_per_second": 79709.3120486507
+    },
+    "elapsed_time": 0.01182413101196289,
+    "scores": {
+      "length": 10,
+      "coherence": 0.9113002803298291,
+      "creativity": 0.5800953207056314,
+      "structure": 0.5635302563259423,
+      "overall": 0.5641247315758267
+    }
+  }
+}

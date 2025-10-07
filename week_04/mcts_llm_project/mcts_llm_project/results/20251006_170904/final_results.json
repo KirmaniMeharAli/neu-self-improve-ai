@@ -1,0 +1,83 @@
+{
+  "config": {
+    "experiment": {
+      "name": "MCTS-LLM Creative Writing",
+      "num_trials": 3,
+      "random_seed": 42,
+      "save_intermediate": true
+    },
+    "mcts": {
+      "num_simulations": 50,
+      "exploration_constant": 1.414,
+      "simulation_depth_limit": 10,
+      "time_limit": null
+    },
+    "llm": {
+      "model_name": "gpt-4",
+      "temperature": 0.7,
+      "max_tokens": 500,
+      "top_p": 0.95
+    },
+    "task": {
+      "genre": "fantasy",
+      "target_length": 5,
+      "coherence_weight": 0.6,
+      "creativity_weight": 0.4
+    },
+    "prompts": [
+      "Create a fantasy story about a reluctant hero",
+      "Write a mystery story set in a haunted library",
+      "Develop a sci-fi narrative about time paradoxes",
+      "Create a romance story with an unexpected twist",
+      "Write a thriller about corporate espionage"
+    ]
+  },
+  "timestamp": "2025-10-06T17:09:05.459078",
+  "analysis": {
+    "mcts_llm": {
+      "mean_coherence": 0.7259937156841998,
+      "std_coherence": 0.11173984238846073,
+      "mean_creativity": 0.6839779793183236,
+      "std_creativity": 0.17478590691404475,
+      "mean_overall": 0.5779070358768076,
+      "std_overall": 0.07311961684211757,
+      "mean_time": 0.02457571029663086,
+      "std_time": 0.0014955563457594563,
+      "mean_simulations": 50.0,
+      "mean_tree_size": 1.0
+    },
+    "pure_llm": {
+      "mean_coherence": 0.7841664323729767,
+      "std_coherence": 0.13799650002845507,
+      "mean_creativity": 0.5884707547701394,
+      "std_creativity": 0.14826581588483845,
+      "mean_overall": 0.562303219139583,
+      "std_overall": 0.045171820127709726,
+      "mean_time": 0.010915851593017578,
+      "std_time": 0.0004455614630637408
+    },
+    "random_mcts": {
+      "mean_coherence": 0.7920244137127609,
+      "std_coherence": 0.14092597519461258,
+      "mean_creativity": 0.5729454997532558,
+      "std_creativity": 0.11923840527694642,
+      "mean_overall": 0.5495759283160536,
+      "std_overall": 0.07197649296618452,
+      "mean_time": 0.011445379257202149,
+      "std_time": 0.000379887177126552,
+      "mean_simulations": 50.0,
+      "mean_tree_size": 1.0
+    },
+    "significance": {
+      "t_statistic": 0.28211430217354116,
+      "p_value": 0.7918507970599278,
+      "significant": "False"
+    }
+  },
+  "summary": {
+    "best_method": "mcts_llm",
+    "performance_gain": 2.774982643901803,
+    "time_overhead": 125.13781986877626,
+    "key_findings": []
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "trial": 3,
+  "mcts_llm": {
+    "method": "MCTS-LLM",
+    "prompt": "Create a romance story with an unexpected twist",
+    "story": {
+      "outline": "Create a romance story with an unexpected twist",
+      "elements": [],
+      "genre": "romance",
+      "final_scores": {
+        "coherence": 1.0,
+        "creativity": 0.5
+      }
+    },
+    "statistics": {
+      "simulations": 10,
+      "elapsed_time": 0.012603759765625,
+      "tree_size": 1,
+      "average_depth": 0,
+      "root_visits": 10,
+      "best_action_visits": 0,
+      "simulations_per_second": 793.4140435835351
+    },
+    "elapsed_time": 0.02460455894470215,
+    "scores": {
+      "length": 8,
+      "coherence": 0.5979914312095727,
+      "creativity": 0.42261364445526906,
+      "structure": 0.6626651653816322,
+      "overall": 0.441914555775779
+    }
+  },
+  "pure_llm": {
+    "method": "Pure-LLM",
+    "prompt": "Create a romance story with an unexpected twist",
+    "story": {
+      "outline": "Generic response for demonstration purposes.",
+      "elements": [],
+      "genre": "fantasy"
+    },
+    "statistics": {
+      "simulations": 1
+    },
+    "elapsed_time": 0.010743379592895508,
+    "scores": {
+      "length": 5,
+      "coherence": 0.6943386448447411,
+      "creativity": 0.535674515886948,
+      "structure": 0.9143687545759647,
+      "overall": 0.5538776991346996
+    }
+  },
+  "random_mcts": {
+    "method": "Random-MCTS",
+    "prompt": "Create a romance story with an unexpected twist",
+    "story": {
+      "outline": "Create a romance story with an unexpected twist\n[Generated with random MCTS]",
+      "elements": [],
+      "genre": "fantasy"
+    },
+    "statistics": {
+      "simulations": 10,
+      "elapsed_time": 0.0002684593200683594,
+      "tree_size": 1,
+      "average_depth": 0,
+      "root_visits": 10,
+      "best_action_visits": 0,
+      "simulations_per_second": 37249.59147424511
+    },
+    "elapsed_time": 0.012012958526611328,
+    "scores": {
+      "length": 12,
+      "coherence": 0.9077307142274171,
+      "creativity": 0.7534286719238086,
+      "structure": 0.8645035840204937,
+      "overall": 0.6760485326494664
+    }
+  }
+}

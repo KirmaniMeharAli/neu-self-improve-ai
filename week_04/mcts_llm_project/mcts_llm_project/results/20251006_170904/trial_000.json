@@ -1,0 +1,79 @@
+{
+  "trial": 0,
+  "mcts_llm": {
+    "method": "MCTS-LLM",
+    "prompt": "Create a fantasy story about a reluctant hero",
+    "story": {
+      "outline": "Create a fantasy story about a reluctant hero",
+      "elements": [],
+      "genre": "fantasy",
+      "final_scores": {
+        "coherence": 1.0,
+        "creativity": 0.5
+      }
+    },
+    "statistics": {
+      "simulations": 50,
+      "elapsed_time": 0.011363744735717773,
+      "tree_size": 1,
+      "average_depth": 0,
+      "root_visits": 50,
+      "best_action_visits": 0,
+      "simulations_per_second": 4399.958038730252
+    },
+    "elapsed_time": 0.022029399871826172,
+    "scores": {
+      "length": 8,
+      "coherence": 0.6872700594236812,
+      "creativity": 0.8753571532049581,
+      "structure": 0.8659969709057025,
+      "overall": 0.6451875579697323
+    }
+  },
+  "pure_llm": {
+    "method": "Pure-LLM",
+    "prompt": "Create a fantasy story about a reluctant hero",
+    "story": {
+      "outline": "Generic response for demonstration purposes.",
+      "elements": [],
+      "genre": "fantasy"
+    },
+    "statistics": {
+      "simulations": 1
+    },
+    "elapsed_time": 0.01042628288269043,
+    "scores": {
+      "length": 5,
+      "coherence": 0.7993292420985183,
+      "creativity": 0.4780093202212183,
+      "structure": 0.5779972601681014,
+      "overall": 0.5008010207295411
+    }
+  },
+  "random_mcts": {
+    "method": "Random-MCTS",
+    "prompt": "Create a fantasy story about a reluctant hero",
+    "story": {
+      "outline": "Create a fantasy story about a reluctant hero\n[Generated with random MCTS]",
+      "elements": [],
+      "genre": "fantasy"
+    },
+    "statistics": {
+      "simulations": 50,
+      "elapsed_time": 9.72747802734375e-05,
+      "tree_size": 1,
+      "average_depth": 0,
+      "root_visits": 50,
+      "best_action_visits": 0,
+      "simulations_per_second": 514007.8431372549
+    },
+    "elapsed_time": 0.010869741439819336,
+    "scores": {
+      "length": 12,
+      "coherence": 0.5442462510259598,
+      "creativity": 0.4979914312095726,
+      "structure": 0.522613644455269,
+      "overall": 0.42199403356171356
+    }
+  }
+}

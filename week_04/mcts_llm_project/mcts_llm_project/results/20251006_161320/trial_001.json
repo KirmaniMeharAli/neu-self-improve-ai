@@ -1,0 +1,79 @@
+{
+  "trial": 1,
+  "mcts_llm": {
+    "method": "MCTS-LLM",
+    "prompt": "Write a mystery story set in a haunted library",
+    "story": {
+      "outline": "Write a mystery story set in a haunted library",
+      "elements": [],
+      "genre": "mystery",
+      "final_scores": {
+        "coherence": 1.0,
+        "creativity": 0.5
+      }
+    },
+    "statistics": {
+      "simulations": 10,
+      "elapsed_time": 0.01153254508972168,
+      "tree_size": 1,
+      "average_depth": 0,
+      "root_visits": 10,
+      "best_action_visits": 0,
+      "simulations_per_second": 867.1112856877054
+    },
+    "elapsed_time": 0.0228271484375,
+    "scores": {
+      "length": 9,
+      "coherence": 0.645614570099021,
+      "creativity": 0.7059264473611897,
+      "structure": 0.569746930326021,
+      "overall": 0.5230116913032674
+    }
+  },
+  "pure_llm": {
+    "method": "Pure-LLM",
+    "prompt": "Write a mystery story set in a haunted library",
+    "story": {
+      "outline": "Generic response for demonstration purposes.",
+      "elements": [],
+      "genre": "fantasy"
+    },
+    "statistics": {
+      "simulations": 1
+    },
+    "elapsed_time": 0.011405229568481445,
+    "scores": {
+      "length": 5,
+      "coherence": 0.6460723242676091,
+      "creativity": 0.5831809216468459,
+      "structure": 0.728034992108518,
+      "overall": 0.51638297219604
+    }
+  },
+  "random_mcts": {
+    "method": "Random-MCTS",
+    "prompt": "Write a mystery story set in a haunted library",
+    "story": {
+      "outline": "Write a mystery story set in a haunted library\n[Generated with random MCTS]",
+      "elements": [],
+      "genre": "fantasy"
+    },
+    "statistics": {
+      "simulations": 10,
+      "elapsed_time": 0.0001571178436279297,
+      "tree_size": 1,
+      "average_depth": 0,
+      "root_visits": 10,
+      "best_action_visits": 0,
+      "simulations_per_second": 63646.49468892261
+    },
+    "elapsed_time": 0.011797904968261719,
+    "scores": {
+      "length": 13,
+      "coherence": 0.9041986740582306,
+      "creativity": 0.5523068845866854,
+      "structure": 0.5488360570031919,
+      "overall": 0.5519188789941132
+    }
+  }
+}

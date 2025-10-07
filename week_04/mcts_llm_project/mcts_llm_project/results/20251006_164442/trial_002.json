@@ -1,0 +1,79 @@
+{
+  "trial": 2,
+  "mcts_llm": {
+    "method": "MCTS-LLM",
+    "prompt": "Develop a sci-fi narrative about time paradoxes",
+    "story": {
+      "outline": "Develop a sci-fi narrative about time paradoxes",
+      "elements": [],
+      "genre": "sci-fi",
+      "final_scores": {
+        "coherence": 1.0,
+        "creativity": 0.5
+      }
+    },
+    "statistics": {
+      "simulations": 50,
+      "elapsed_time": 0.014229059219360352,
+      "tree_size": 1,
+      "average_depth": 0,
+      "root_visits": 50,
+      "best_action_visits": 0,
+      "simulations_per_second": 3513.9357584490876
+    },
+    "elapsed_time": 0.026285171508789062,
+    "scores": {
+      "length": 7,
+      "coherence": 0.9462794992449889,
+      "creativity": 0.6696711209578254,
+      "structure": 0.9037200775820313,
+      "overall": 0.6683292015772506
+    }
+  },
+  "pure_llm": {
+    "method": "Pure-LLM",
+    "prompt": "Develop a sci-fi narrative about time paradoxes",
+    "story": {
+      "outline": "Generic response for demonstration purposes.",
+      "elements": [],
+      "genre": "fantasy"
+    },
+    "statistics": {
+      "simulations": 1
+    },
+    "elapsed_time": 0.010724306106567383,
+    "scores": {
+      "length": 5,
+      "coherence": 0.9480456499617467,
+      "creativity": 0.559001737485932,
+      "structure": 0.5550259622638384,
+      "overall": 0.5651194086870712
+    }
+  },
+  "random_mcts": {
+    "method": "Random-MCTS",
+    "prompt": "Develop a sci-fi narrative about time paradoxes",
+    "story": {
+      "outline": "Develop a sci-fi narrative about time paradoxes\n[Generated with random MCTS]",
+      "elements": [],
+      "genre": "fantasy"
+    },
+    "statistics": {
+      "simulations": 50,
+      "elapsed_time": 0.000522613525390625,
+      "tree_size": 1,
+      "average_depth": 0,
+      "root_visits": 50,
+      "best_action_visits": 0,
+      "simulations_per_second": 95672.99270072993
+    },
+    "elapsed_time": 0.011706113815307617,
+    "scores": {
+      "length": 11,
+      "coherence": 0.822586395204725,
+      "creativity": 0.48718321450249574,
+      "structure": 0.845468869051233,
+      "overall": 0.5664246567224127
+    }
+  }
+}
