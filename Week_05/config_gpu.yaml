@@ -1,0 +1,39 @@
+model:
+  name: "Qwen/Qwen2.5-1.5B-Instruct"
+  max_length: 512
+  temperature: 0.7
+  top_p: 0.95
+
+dataset:
+  train_path: "competition_math.csv"
+  eval_subset_size: 50  # Reduced for faster evaluation
+  batch_size: 2  # Smaller batch for faster processing
+  num_workers: 2
+
+mcts:
+  num_simulations: 3  # Minimal simulations for speed
+  c_puct: 1.4
+  max_depth: 3  # Shallow depth for speed
+  discount_factor: 0.99
+
+astar_po:
+  learning_rate: 0.00001
+  advantage_weight: 1.0
+  kl_weight: 0.1
+  entropy_weight: 0.01
+  clip_range: 0.2
+  value_loss_weight: 0.5
+  max_grad_norm: 0.5
+
+training:
+  num_epochs: 1
+  steps_per_epoch: 10  # Just 10 steps to see results quickly
+  eval_frequency: 5
+  save_frequency: 10
+  gradient_accumulation_steps: 1
+  mixed_precision: true
+
+logging:
+  use_wandb: false
+  project_name: "PAG-ASTAR-MATH"
+  log_frequency: 2
