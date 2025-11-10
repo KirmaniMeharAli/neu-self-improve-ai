@@ -1,0 +1,12 @@
+[workspace]
+restore_data_on_startup = True
+save_data_on_exit = True
+save_history = True
+save_non_project_files = False
+project_type = 'empty-project-type'
+recent_files = ['main.py', 'train_complete.py', 'tests\\test_basic.py', 'experiments\\results\\actual\\training_results.json', 'environments\\webshop_env.py', 'evaluation\\evaluate_webarena.py', 'evaluation\\failure_analysis.py', 'training\\train_webshop.py', 'evaluation\\metrics.py', 'environments\\webarena_env.py', 'train_webarena.py', 'evaluate_complete.py', 'agents\\baseline_agents.py', 'agents\\webshop_agent.py', 'experiments\\results\\webarena\\evaluation_results.json']
+
+[main]
+version = 0.2.0
+recent_files = []
+
