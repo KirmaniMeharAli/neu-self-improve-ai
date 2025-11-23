@@ -1,0 +1,8 @@
+{
+  "project_name": "MaAS_TruthfulQA_Assignment",
+  "author": "Syed Mehar Ali",
+  "course": "INFO 6105",
+  "dataset": "TruthfulQA",
+  "num_questions": 100,
+  "adaptation_note": "Using simulated MaAS wrapper due to dependency constraints"
+}

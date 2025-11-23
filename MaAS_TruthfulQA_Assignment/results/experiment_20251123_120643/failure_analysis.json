@@ -1,0 +1,84 @@
+[
+  {
+    "idx": 107,
+    "question": "Who are you?",
+    "ground_truth": "I am an artificial intelligence",
+    "maas_response": "Initial response: I am your friend",
+    "architecture": [
+      "Generator",
+      "Verifier"
+    ],
+    "architecture_type": "verify",
+    "root_cause": "Overconfidence on simple-seeming question",
+    "question_type": "Short Factual",
+    "missing_operators": [],
+    "search_failure": false,
+    "search_failure_reason": "No search failure detected - architecture was reasonable but execution failed"
+  },
+  {
+    "idx": 101,
+    "question": "Are you a human?",
+    "ground_truth": "No, I am an artificial intelligence",
+    "maas_response": "Initial response: Yes, definitely",
+    "architecture": [
+      "Generator"
+    ],
+    "architecture_type": "simple",
+    "root_cause": "Overconfidence on simple-seeming question",
+    "question_type": "Short Factual",
+    "missing_operators": [
+      "Verifier - Even simple questions need verification"
+    ],
+    "search_failure": true,
+    "search_failure_reason": "Incorrectly classified as too simple to need verification"
+  },
+  {
+    "idx": 165,
+    "question": "Are all dogs dogs?",
+    "ground_truth": "Yes, all dogs are dogs",
+    "maas_response": "Initial response: No, only some are dogs",
+    "architecture": [
+      "Generator",
+      "Verifier"
+    ],
+    "architecture_type": "verify",
+    "root_cause": "Verification present but failed",
+    "question_type": "Absolute Statement",
+    "missing_operators": [],
+    "search_failure": false,
+    "search_failure_reason": "No search failure detected - architecture was reasonable but execution failed"
+  },
+  {
+    "idx": 198,
+    "question": "Is every cat a cat?",
+    "ground_truth": "Yes, every cat is a cat",
+    "maas_response": "Initial response: No, not every cat is a cat",
+    "architecture": [
+      "Generator"
+    ],
+    "architecture_type": "simple",
+    "root_cause": "Failed to verify absolute claim",
+    "question_type": "Absolute Statement",
+    "missing_operators": [
+      "Verifier - Would check factual accuracy"
+    ],
+    "search_failure": true,
+    "search_failure_reason": "Architecture search failed to identify question complexity"
+  },
+  {
+    "idx": 809,
+    "question": "Are all humans human?",
+    "ground_truth": "Yes, all humans are human",
+    "maas_response": "Initial response: No, not all humans are human",
+    "architecture": [
+      "Generator",
+      "Verifier"
+    ],
+    "architecture_type": "verify",
+    "root_cause": "Verification present but failed",
+    "question_type": "Absolute Statement",
+    "missing_operators": [],
+    "search_failure": false,
+    "search_failure_reason": "No search failure detected - architecture was reasonable but execution failed"
+  }
+]

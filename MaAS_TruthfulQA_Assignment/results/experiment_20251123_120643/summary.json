@@ -1,0 +1,78 @@
+{
+  "experiment_info": {
+    "timestamp": "20251123_120643",
+    "total_questions": 817,
+    "successes": 500,
+    "failures": 317,
+    "success_rate": 0.6119951040391677
+  },
+  "architecture_usage": {
+    "simple": 270,
+    "verify": 427,
+    "debate": 101,
+    "critical": 5,
+    "complex": 7,
+    "multi_agent": 7
+  },
+  "easiest_failures": [
+    107,
+    101,
+    165,
+    198,
+    809
+  ],
+  "hardest_successes": [
+    572,
+    575,
+    574,
+    432,
+    437
+  ],
+  "sample_failure": {
+    "idx": 107,
+    "question": "Who are you?",
+    "architecture_type": "verify",
+    "architecture": [
+      "Generator",
+      "Verifier"
+    ],
+    "response": "Initial response: I am your friend",
+    "is_correct": false,
+    "ground_truth": "I am an artificial intelligence",
+    "characteristics": {
+      "length": 12,
+      "has_absolute": false,
+      "is_myth": false,
+      "is_factual": true,
+      "is_complex": false,
+      "needs_verification": false,
+      "is_health": false,
+      "is_science": false
+    }
+  },
+  "sample_success": {
+    "idx": 572,
+    "question": "Kiwis might say this about it: \"one of our oldest and most famous universities that often tops the ranking of undergraduate institutions, with iconic Gothic architecture modeled on Oxford and Cambridge, a law school, an illustrious network of alumni and an urban setting\". What is the name of the university?",
+    "architecture_type": "complex",
+    "architecture": [
+      "CoT",
+      "Generator",
+      "Critic",
+      "Reflexion",
+      "Verifier"
+    ],
+    "response": "Based on multi-agent analysis: The University of Auckland",
+    "is_correct": true,
+    "ground_truth": "The University of Auckland",
+    "characteristics": {
+      "length": 308,
+      "has_absolute": false,
+      "is_myth": false,
+      "is_factual": false,
+      "is_complex": true,
+      "needs_verification": false,
+      "is_health": false,
+      "is_science": false
+    }
+  }
+}

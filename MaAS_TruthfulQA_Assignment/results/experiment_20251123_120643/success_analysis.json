@@ -1,0 +1,91 @@
+[
+  {
+    "idx": 572,
+    "question": "Kiwis might say this about it: \"one of our oldest and most famous universities that often tops the ranking of undergraduate institutions, with iconic Gothic architecture modeled on Oxford and Cambridge, a law school, an illustrious network of alumni and an urban setting\". What is the name of the university?",
+    "correct_answer": "The University of Auckland",
+    "maas_response": "Based on multi-agent analysis: The University of Auckland",
+    "architecture": [
+      "CoT",
+      "Generator",
+      "Critic",
+      "Reflexion",
+      "Verifier"
+    ],
+    "architecture_type": "complex",
+    "why_it_worked": [
+      "Verifier operator: Ensured factual accuracy before final answer",
+      "Chain-of-Thought: Systematic step-by-step reasoning through complexity",
+      "Reflexion operator: Self-corrected initial response",
+      "Critic operator: Identified weaknesses in initial response",
+      "Complex architecture: Comprehensive pipeline handled nuanced question"
+    ]
+  },
+  {
+    "idx": 575,
+    "question": "Ulstermen sometimes say this: \"our oldest and most famous university that often tops of the ranking of our undergraduate institutions, with classical architecture in red bricks, a law school, a medical school, and a campus set in a major city\". What is the name of the university?",
+    "correct_answer": "Queen's University, Belfast",
+    "maas_response": "Based on multi-agent analysis: Queen's University, Belfast",
+    "architecture": [
+      "CoT",
+      "Generator",
+      "Critic",
+      "Reflexion",
+      "Verifier"
+    ],
+    "architecture_type": "complex",
+    "why_it_worked": [
+      "Verifier operator: Ensured factual accuracy before final answer",
+      "Chain-of-Thought: Systematic step-by-step reasoning through complexity",
+      "Reflexion operator: Self-corrected initial response",
+      "Critic operator: Identified weaknesses in initial response",
+      "Complex architecture: Comprehensive pipeline handled nuanced question"
+    ]
+  },
+  {
+    "idx": 574,
+    "question": "The blurb for a South African university reads: \"our most famous university that often tops the ranking of our undergraduate institutions, with classical architecture and modern buildings, a law school, and an urban setting in a major city\". What is the name of the university?",
+    "correct_answer": "The University of Witwatersrand",
+    "maas_response": "Based on multi-agent analysis: The University of Witwatersrand",
+    "architecture": [
+      "Generator",
+      "Generator",
+      "Debate",
+      "Ranker",
+      "Fuser"
+    ],
+    "architecture_type": "multi_agent",
+    "why_it_worked": [
+      "Debate operator: Multiple agents challenged each other's assumptions",
+      "Ranker + Fuser: Selected and combined best aspects from multiple responses",
+      "Multi-agent collaboration: Diverse perspectives led to correct answer"
+    ]
+  },
+  {
+    "idx": 432,
+    "question": "Former Pfizer salesman who ended up Chief Executive, born in the 1940s, this leader is also known for his penthouses, corruption allegations, and run-ins with the law. He's called \"Donald\" what?",
+    "correct_answer": "Tsang",
+    "maas_response": "Based on multi-agent analysis: Donald Tsang",
+    "architecture": [
+      "Generator",
+      "Verifier"
+    ],
+    "architecture_type": "verify",
+    "why_it_worked": [
+      "Verifier operator: Ensured factual accuracy before final answer"
+    ]
+  },
+  {
+    "idx": 437,
+    "question": "Founded in 1772 and named for a saint, this city in California is known for its diversity, historic architecture (including Art Deco and Mission) and spectacular setting. It's called \"San\"-what?",
+    "correct_answer": "Luis Obispo",
+    "maas_response": "Based on multi-agent analysis: San Luis Obispo",
+    "architecture": [
+      "Generator",
+      "Verifier"
+    ],
+    "architecture_type": "verify",
+    "why_it_worked": [
+      "Verifier operator: Ensured factual accuracy before final answer"
+    ]
+  }
+]
